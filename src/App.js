@@ -15,17 +15,17 @@ function App() {
         text: 'Meeting at School',
         day: 'Feb 6th at 1:30pm',
         reminder: true,
-    },
+    },  
     {
-        id: 3,
+        id: 3,   
         text: 'Food Shopping',
-        day: 'Feb 5th at 2:30pm', 
+        day: 'Feb 5th at 2:30pm',
         reminder: false,
     }
 ])
 
 const deleteTask = (id) => {
-  console.log('delete', id) 
+    setTasks(tasks.filter((task) => task.id !== id))
 }
 
   return (
@@ -36,4 +36,4 @@ const deleteTask = (id) => {
   )
 }
 
-export default App
+export default App 
